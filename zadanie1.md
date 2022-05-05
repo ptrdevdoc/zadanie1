@@ -13,4 +13,9 @@
     6. -> docker buildx imagetools inspect ajres/sprawozdaniezadanie1:bx
 
 ## CZĘŚĆ DODATKOWA
-1. GitHubActions/GitHub Container Regitry wszystko w pliku .yaml
+Dodatek 1. GitHubActions/GitHub Container Regitry wszystko w pliku .yaml <br>
+Dodatek 2.  1   a.1 -> Pobranie obrazu: docker pull registry <br>
+                a.2 -> docker run -d -p 6677:5000 --restart always --name registry registry <br>
+                b.1 -> docker pull ubuntu<br>
+                b.2 -> docker tag ubuntu localhost:6677/ubuntu-reg<br>
+                b.3 -> docker push localhost:6677/ubuntu-reg<br>
